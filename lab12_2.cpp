@@ -34,8 +34,6 @@ void updateImage(bool image[][M],int s,int x,int y){
         }
     }
 }
-
-
 void showImage(const bool image[][M]){
     for (int i = 0; i < 32; i++)
     {
@@ -49,7 +47,7 @@ void showImage(const bool image[][M]){
                 cout << "|";
             }else if (i>=1&&j>=1)
             {
-                if (image[i-1][j-1])
+                if (image[i-1][j-1]==1)
                 {
                     cout << "*";
                 }else{
